@@ -3,7 +3,7 @@
 #
 
 # we use Debian as the host OS
-FROM philcryer/min-jessie:latest
+FROM debian:jessie
 
 LABEL author="Andreas Gohr <andi@splitbrain.org>, Eugene Sia <eugene@eugenesia.co.uk>"
 
@@ -30,6 +30,8 @@ ENV \
     # apt-get complains that this is an 'essential' package.
     debian-archive-keyring \
     imagemagick \
+    ssmtp \
+    vim \
     libbz2-dev \
     libc-client2007e-dev \
     libcurl4-openssl-dev \
